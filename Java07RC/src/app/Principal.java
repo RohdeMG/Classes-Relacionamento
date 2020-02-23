@@ -2,7 +2,7 @@ package app;
 
 //Relacionamento entre classes
 
-public class App {
+public class Principal {
     public static void main(String[] args) throws Exception {
         
     }
