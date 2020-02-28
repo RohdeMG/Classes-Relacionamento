@@ -25,23 +25,41 @@ public class Lutador {
         this.empate = em;
     }
 
-  
+    // *** métodos somente para mostrar alguma info
+    public void apresentar(){
+
+    } 
+    public void status(){
+        
+    }
+
+    public void ganharLuta(){
+
+    }
+    public void perderLuta(){
+
+    }
+    public void empatarLuta(){
+
+    }
+      // *** métodos somente para mostrar alguma info 
+
 
 
     public String getNome() {
         return this.nome;
     }
 
-    public void setNome(String no) {
-        this.nome = no;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getNacionalidade() {
         return this.nacionalidade;
     }
 
-    public void setNacionalidade(String na) {
-        this.nacionalidade = na;
+    public void setNacionalidade(String nacionalidade) {
+        this.nacionalidade = nacionalidade;
     }
 
     public int getIdade() {
@@ -64,18 +82,28 @@ public class Lutador {
         return this.peso;
     }
 
-    public void setPeso(float pe) {
-        this.peso = pe;
-        this.setCategoria(categoria);
+    public void setPeso(float peso) {
+        this.peso = peso;
+        this.setCategoria();
     }
+
+
 
     public String getCategoria() {
         return this.categoria;
     }
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    public void setCategoria() {
+        if(this.peso < 52.2){
+            this.categoria = "Inválida";
+        }if (this.peso <= 70.3) {
+            this.categoria = "Peso Leve";
+        } else {
+            
+        }
     }
+
+
 
     public int getVitorias() {
         return this.vitorias;
@@ -103,21 +131,8 @@ public class Lutador {
 
 
 
-    //métodos abtratos
-    public abstract void apresentar(){
+    
 
-    }
-    public abstract void status(){
-
-    }
-    public abstract void ganharLuta(){
-
-    }
-    public abstract void perderLuta(){
-
-    }
-    public abstract void empatarLuta(){
-
-    }
+   
 
 }
