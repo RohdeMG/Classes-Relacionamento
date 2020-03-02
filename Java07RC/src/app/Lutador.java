@@ -27,10 +27,22 @@ public class Lutador {
 
     // *** métodos somente para mostrar alguma info
     public void apresentar(){
-
+        System.out.println("================================");
+        System.out.println("O lutador é: "+ this.getNome());
+        System.out.println("Sua nacionalidade: "+ this.getNacionalidade());
+        System.out.println("Idade: "+ this.getIdade());
+        System.out.println("Altura: "+ this.getAltura());
+        System.out.println("Peso: "+ this.getPeso() +"Kg");
+        System.out.println("Vitórias: "+ this.getVitorias());
+        System.out.println("Derrotas: "+ this.getDerrotas());
+        System.out.println("Empates: "+ this.getEmpate());
+        System.out.println("=================================");
     } 
     public void status(){
-        
+        System.out.println(this.getNome() +" é do peso ---> " + this.getCategoria() + " <---");
+        System.out.println("Vitórias: " + this.getVitorias());
+        System.out.println("Derrotas: " + this.getDerrotas());
+        System.out.println("Empates: " + this.getEmpate());
     }
     // *** métodos somente para mostrar alguma info 
     public void ganharLuta(){
