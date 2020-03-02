@@ -25,7 +25,6 @@ public class Lutador {
         this.empate = em;
     }
 
-
     
     // *** métodos somente para mostrar alguma info
     public void apresentar(){
